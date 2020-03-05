@@ -53,7 +53,7 @@ def game_hash
         :blocks => 5,
         :slam_dunks => 12
       },
-      { :player_name => 
+      { :player_name => "Alan Anderson",
         
       }
       ]
