@@ -54,7 +54,12 @@ def game_hash
                   :steals => 7,
                   :blocks => 5,
                   :slam_dunks => 12
-                },
+                }
+              ]
+            },
+      :home => {:team_name => "Brooklyn Nets",
+                :colors => ["Black", "White"],
+                :players => [
                 { :player_name => "Alan Anderson",
                   :number => 0,
                   :shoe => 16,
@@ -105,9 +110,9 @@ def game_hash
                   :blocks => 11,
                   :slam_dunks => 1
                 }
-                ]
-              }
+              ]
             }
+          }
 end
 
 def num_points_scored(players_name)
