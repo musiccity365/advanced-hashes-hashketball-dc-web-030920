@@ -170,7 +170,9 @@ def player_name(team_name)
   #returns array of jersey numbers for that team
   game_hash.map do |place, team|
     if team[:team_name] == team_name
-      binding.pry
+      team.each do |attributes, data|
+        binding.pry
+      end
     end
   end
 end
