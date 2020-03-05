@@ -152,12 +152,25 @@ def team_colors(team_name)
   end
 end
 
-
-
 def team_names
-  new_arr = []
-  game_hash.each do |place, team|
-    new_arr << team[:team_name]
+  game_hash.map do |place, team|
+    team[:team_name]
   end
-  new_arr
+end
+
+#def team_names
+#  new_arr = []
+#  game_hash.each do |place, team|
+#    new_arr << team[:team_name]
+#  end
+#  new_arr
+#end
+
+def player_name(team_name)
+  #returns array of jersey numbers for that team
+  game_hash.map do |place, team|
+    if team[:team_name] == team_name
+      binding pry
+    end
+  end
 end
